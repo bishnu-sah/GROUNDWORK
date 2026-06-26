@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import monolithImage from '../assets/images/monolith_residence.png';
-import canyonImage from '../assets/images/canyon_house.png';
-import sacredocImage from '../assets/images/sacredoc_studio.png';
+const monolithImage = "/Project Card 1new.png";
+const canyonImage = "/project card 2.png";
+const sacredocImage = "/Project Card 3new.png";
 
 interface Project {
   title: string;

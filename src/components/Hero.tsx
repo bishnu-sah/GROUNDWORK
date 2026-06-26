@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import heroImage from '../assets/images/hero_architecture.png';
+const heroImage = "/home.jpg"; // Path to your hero image
 
 export const Hero: React.FC = () => {
   return (
