@@ -9,6 +9,7 @@ export const StepIndicator: React.FC<StepIndicatorProps> = ({ currentStep }) => 
     { num: '01', title: 'PROJECT TYPE', id: 1 },
     { num: '02', title: 'DETAILS', id: 2 },
     { num: '03', title: 'VISION', id: 3 },
+    { num: '04', title: 'REVIEW', id: 4 },
   ];
 
   return (

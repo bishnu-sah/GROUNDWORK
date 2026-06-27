@@ -11,36 +11,35 @@ interface Article {
 
 export const ArticleGrid: React.FC = () => {
   const articles: Article[] = [
-    {
-      title: 'Choosing Materials That Last: Beyond Aesthetics',
-      category: 'Sustainable Living',
-      readTime: '6 Min Read',
-      desc: 'Investigating concrete aggregates, seasoned cedar panel joints, and corrosion resistance configurations built for extreme regional weather environments.',
-      image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: "The Architect's Design Process: From Sketch to Site",
-      category: 'Design Education',
-      readTime: '8 Min Read',
-      desc: 'Tracking the progression from initial hand-drawn carbon designs and digital modeling grids to active structural masonry blueprints.',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'Passive Design: Harnessing the Elements',
-      category: 'Sustainable Living',
-      readTime: '5 Min Read',
-      desc: 'How carefully computed thermal masses, seasonal solar orientation, and airflow paths minimize dependency on mechanical ventilation.',
-      image: 'https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80',
-    },
-    {
-      title: 'The Quiet Luxury of Volume and Light',
-      category: 'Behind The Design',
-      readTime: '7 Min Read',
-      desc: 'A case study on subtractions of structural ornamentation, raising ceiling planes, and utilizing floor-to-ceiling glass to expand internal voids.',
-      image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80',
-    },
-  ];
-
+  {
+    title: 'Choosing Materials That Last: Beyond Aesthetics',
+    category: 'Sustainable Living',
+    readTime: '6 Min Read',
+    desc: 'Investigating concrete aggregates, seasoned cedar panel joints, and corrosion resistance configurations built for extreme regional weather environments.',
+    image: '/INSIGHT/CARD1.png',
+  },
+  {
+    title: "The Architect's Design Process: From Sketch to Site",
+    category: 'Design Education',
+    readTime: '8 Min Read',
+    desc: 'Tracking the progression from initial hand-drawn carbon designs and digital modeling grids to active structural masonry blueprints.',
+    image: '/INSIGHT/CARD2.png',
+  },
+  {
+    title: 'Passive Design: Harnessing the Elements',
+    category: 'Sustainable Living',
+    readTime: '5 Min Read',
+    desc: 'How carefully computed thermal masses, seasonal solar orientation, and airflow paths minimize dependency on mechanical ventilation.',
+    image: '/INSIGHT/CARD3.png',
+  },
+  {
+    title: 'The Quiet Luxury of Volume and Light',
+    category: 'Behind The Design',
+    readTime: '7 Min Read',
+    desc: 'A case study on subtractions of structural ornamentation, raising ceiling planes, and utilizing floor-to-ceiling glass to expand internal voids.',
+    image: '/INSIGHT/CARD4.png',
+  },
+];
   const containerVariants = {
     hidden: {},
     visible: {

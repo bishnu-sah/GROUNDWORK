@@ -77,8 +77,10 @@ export const InquiryWizard: React.FC<InquiryWizardProps> = ({
     } else if (currentStep === 3) {
       const isValid = vision.goals.trim() !== '' && vision.agreement;
       onValidationChange(isValid);
+    } else if (currentStep === 4) {
+      onValidationChange(true);
     }
-  }, [currentStep, selectedType, details, vision]);
+  }, [currentStep, selectedType, details, vision, onValidationChange]);
 
   const slideVariants = {
     enter: (direction: number) => ({
@@ -342,6 +344,80 @@ export const InquiryWizard: React.FC<InquiryWizardProps> = ({
                   I agree to the processing of personal data for architectural consultations.
                 </label>
               </div>
+            </div>
+          </motion.div>
+        )}
+
+        {currentStep === 4 && (
+          <motion.div
+            key="step4"
+            custom={stepDirection}
+            variants={slideVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            className="flex flex-col text-left space-y-12"
+          >
+            <div>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#111111] mb-4">
+                Review your inquiry.
+              </h2>
+              <p className="font-sans text-xs sm:text-sm text-[#6B6B6B]">
+                Confirm the essentials before sending them to the studio.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="border border-[#E8E8E8] bg-white p-6">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B] font-semibold block mb-3">
+                  Project Type
+                </span>
+                <p className="font-sans text-sm text-[#111111] capitalize">
+                  {selectedType?.replace('-', ' ') || 'Not selected'}
+                </p>
+              </div>
+
+              <div className="border border-[#E8E8E8] bg-white p-6">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B] font-semibold block mb-3">
+                  Contact
+                </span>
+                <p className="font-sans text-sm text-[#111111]">
+                  {details.name || 'Name pending'}
+                </p>
+                <p className="font-sans text-sm text-[#6B6B6B] mt-1">
+                  {details.email || 'Email pending'}
+                </p>
+              </div>
+
+              <div className="border border-[#E8E8E8] bg-white p-6">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B] font-semibold block mb-3">
+                  Site and Scope
+                </span>
+                <p className="font-sans text-sm text-[#111111]">
+                  {details.location || 'Location pending'}
+                </p>
+                <p className="font-sans text-sm text-[#6B6B6B] mt-1">
+                  {details.budget || 'Budget pending'} / {details.timeline || 'Timeline pending'}
+                </p>
+              </div>
+
+              <div className="border border-[#E8E8E8] bg-white p-6">
+                <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B] font-semibold block mb-3">
+                  Attachments
+                </span>
+                <p className="font-sans text-sm text-[#111111]">
+                  {vision.fileName || 'No files attached'}
+                </p>
+              </div>
+            </div>
+
+            <div className="border-l border-[#111111] pl-6">
+              <span className="font-mono text-[10px] uppercase tracking-wider text-[#6B6B6B] font-semibold block mb-3">
+                Vision Notes
+              </span>
+              <p className="font-sans text-sm sm:text-base text-[#111111] leading-relaxed">
+                {vision.goals || 'No notes provided.'}
+              </p>
             </div>
           </motion.div>
         )}

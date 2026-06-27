@@ -109,7 +109,7 @@ export const ContactDetails: React.FC = () => {
             className="w-full aspect-[3/4] sm:aspect-[4/5] overflow-hidden bg-[#E6E6E6]"
           >
             <img
-              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80"
+            src="/greeen 1.png"
               alt="Vertical Minimalist Villa Column"
               className="w-full h-full object-cover"
               loading="lazy"

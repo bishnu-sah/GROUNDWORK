@@ -54,8 +54,7 @@ export const StudioCTA: React.FC = () => {
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1200&q=80"
-              alt="Landscape Architectural Villa Architecture"
+              src="/Architectural detail.png"              alt="Landscape Architectural Villa Architecture"
               className="w-full h-full object-cover"
               loading="lazy"
             />

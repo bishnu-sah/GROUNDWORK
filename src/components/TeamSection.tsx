@@ -8,29 +8,28 @@ interface Member {
 }
 
 export const TeamSection: React.FC = () => {
-  const team: Member[] = [
-    {
-      name: 'Elena Rostova',
-      role: 'Principal Architect',
-      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=500&q=80',
-    },
-    {
-      name: 'Marcus Vance',
-      role: 'Design Director',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=500&q=80',
-    },
-    {
-      name: 'Sarah Jenkins',
-      role: 'Lead Interior Stylist',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&h=500&q=80',
-    },
-    {
-      name: 'David Kael',
-      role: 'Structural Consultant',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&h=500&q=80',
-    },
-  ];
-
+  const team = [
+  {
+    name: "Elias Thorne",
+    role: "Principal Architect",
+    image: "/Elias Thorne.png",
+  },
+  {
+    name: "Sarah Chen",
+    role: "Design Director",
+    image: "/Sarah Chen.png",
+  },
+  {
+    name: "Marcus Vane",
+    role: "Structural Lead",
+    image: "/Marcus Vane.png",
+  },
+  {
+    name: "Elena Rossi",
+    role: "Sustainability Lead",
+    image: "/Elena Rossi.png",
+  },
+];
   const containerVariants = {
     hidden: {},
     visible: {

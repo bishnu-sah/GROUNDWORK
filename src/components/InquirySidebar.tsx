@@ -28,7 +28,7 @@ export const InquirySidebar: React.FC = () => {
         className="relative w-full aspect-[4/5] overflow-hidden bg-[#E8E8E8]"
       >
         <img
-          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+          src="/last.png"
           alt="Studio Context Model detail"
           className="w-full h-full object-cover grayscale"
           loading="lazy"

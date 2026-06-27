@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import philosophyImage from '../assets/images/philosophy_architecture.png';
 
 export const Philosophy: React.FC = () => {
   return (
@@ -17,7 +16,7 @@ export const Philosophy: React.FC = () => {
             className="w-full aspect-[4/5] overflow-hidden bg-[#E5E5E5]"
           >
             <img
-              src={philosophyImage}
+              src="/arc.png"    
               alt="Monochrome Architectural Close-up"
               loading="lazy"
               className="w-full h-full object-cover"

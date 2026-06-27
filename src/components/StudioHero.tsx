@@ -30,7 +30,7 @@ export const StudioHero: React.FC = () => {
             className="w-full aspect-[3/4] sm:aspect-[4/5] overflow-hidden bg-[#E6E6E6]"
           >
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+              src="/building 1.png"
               alt="Portrait Minimalist Architecture Structure"
               className="w-full h-full object-cover"
               loading="lazy"

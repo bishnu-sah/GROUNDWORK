@@ -18,10 +18,10 @@ export const Inquire: React.FC = () => {
   };
 
   const handleContinue = () => {
-    if (currentStep < 3) {
+    if (currentStep < 4) {
       setStepDirection(1);
       setCurrentStep((prev) => prev + 1);
-      setCanContinue(false);
+      setCanContinue(currentStep === 3);
     } else {
       alert('Your inquiry was successfully submitted. Groundwork Architects will reach out shortly.');
       window.location.href = '/';
@@ -60,7 +60,7 @@ export const Inquire: React.FC = () => {
             
             <InquiryFooter
               canContinue={canContinue}
-              isLastStep={currentStep === 3}
+              isLastStep={currentStep === 4}
               onContinue={handleContinue}
               onBack={handleBack}
               currentStep={currentStep}
